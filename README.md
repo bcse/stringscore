@@ -43,5 +43,5 @@ String Score is released under the [MIT License](http://opensource.org/licenses/
 Credits
 -------
 
-Copyright © 2009 Ryan McGeary (Author of [LiquidMetal](https://github.com/rmm5t/liquidmetal))
+Copyright © 2009 Ryan McGeary (Author of [LiquidMetal](https://github.com/rmm5t/liquidmetal))  
 Copyright © 2013 Grey Lee

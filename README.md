@@ -1,9 +1,9 @@
 String Score
 ============
 
-Port of [LiquidMetal](https://github.com/rmm5t/liquidmetal) from JavaScript to Python.
-
 An algorithm provides scores between 0.0 (no match) to 1.0 (perfect match) for a comparison of two strings.
+
+The algorithm is designed for auto-completion. For string similarity, please check [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) ([Wagner–Fischer algorithm](https://en.wikipedia.org/wiki/Wagner-Fischer_algorithm)).
 
 Usage
 -----
@@ -11,29 +11,31 @@ Usage
 Include the library:
 
 ```python
-import stringscore
+from stringscore import liquidmetal
 ```
 
 Score any string against an abbreviation:
 
 ```python
->>> stringscore.score('FooBar',  'foo')
+>>> liquidmetal.score('FooBar', 'foo')
 0.95
->>> stringscore.score('FooBar',  'fb')
+>>> liquidmetal.score('FooBar', 'fb')
 0.916666666667
->>> stringscore.score('Foo Bar', 'fb')
+>>> liquidmetal.score('Foo Bar', 'fb')
 0.928571428571
->>> stringscore.score('Foo Bar', 'baz')
+>>> liquidmetal.score('Foo Bar', 'baz')
 0.0
->>> stringscore.score('Foo Bar', '')
+>>> liquidmetal.score('Foo Bar', '')
 0.8
 ```
 
 Similar Works
 -------------
 
-- Quicksilver's [scoreForAbbreviation](https://github.com/quicksilver/Quicksilver/blob/master/Quicksilver/Code-QuickStepFoundation/NSString_BLTRExtensions.m#L53) algorithm by Alcor
+- Quicksilver's [scoreForAbbreviation](https://github.com/quicksilver/Quicksilver/blob/master/Quicksilver/Code-QuickStepFoundation/NSString_BLTRExtensions.m#L53) algorithm by Alcor (Blacktree, Inc)
+- [LiquidMetal](https://github.com/rmm5t/liquidmetal) by Ryan McGeary
 - [string_score](https://github.com/joshaven/string_score) by Joshaven Potter
+- [jQuery.fuzzyMatch](https://github.com/rapportive-oss/jquery-fuzzymatch) by [Rapportive](http://rapportive.com/)
 
 License
 -------
@@ -43,5 +45,6 @@ String Score is released under the [MIT License](http://opensource.org/licenses/
 Credits
 -------
 
+Copyright © 2003 Blacktree, Inc (Original author of [Quicksilver](https://github.com/quicksilver/Quicksilver))  
 Copyright © 2009 Ryan McGeary (Author of [LiquidMetal](https://github.com/rmm5t/liquidmetal))  
 Copyright © 2013 Grey Lee

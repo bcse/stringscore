@@ -1,18 +1,5 @@
-"""
-String Score
-~~~~~~~~~~~~
-
-Port of [LiquidMetal](https://github.com/rmm5t/liquidmetal) from JavaScript to Python.
-
-An algorithm provides scores between 0.0 (no match) to 1.0 (perfect match) for a comparison of two strings.
-
-:copyright: (c) 2013 by Grey Lee.
-:license: MIT License.
-"""
-
-__version__ = '1.2.1'
-__author__ = 'Grey Lee <bcse@bcse.tw>'
-
+# Ported from LiquidMetal
+# https://github.com/rmm5t/liquidmetal
 
 SCORE_NO_MATCH = 0.0
 SCORE_MATCH = 1.0
@@ -130,4 +117,4 @@ if __name__ == '__main__':
         if len(abbrev) > len(string):
             string, abbrev = abbrev, string
         score(string, abbrev)
-    print 'Benchmark: %ss' % (clock() - t0)
+    print('Benchmark: %ss' % (clock() - t0))

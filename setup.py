@@ -1,11 +1,12 @@
 from distutils.core import setup
 setup(name='stringscore',
-      version='1.2.1',
+      version='1.0',
       description='An algorithm provides scores between 0.0 (no match) to 1.0 (perfect match) for a comparison of two strings.',
       classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.5',
@@ -22,5 +23,6 @@ setup(name='stringscore',
       url='https://github.com/bcse/stringscore',
       license='MIT License',
       packages=['stringscore'],
+      package_dir={'stringscore': 'stringscore'},
       platforms=['any'],
       )

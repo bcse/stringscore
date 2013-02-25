@@ -1,4 +1,4 @@
-String Score
+String Score [![Build Status](https://travis-ci.org/bcse/stringscore.png?branch=master)](https://travis-ci.org/bcse/stringscore)
 ============
 
 An algorithm provides scores between 0.0 (no match) to 1.0 (perfect match) for a comparison of two strings.

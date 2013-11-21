@@ -48,3 +48,7 @@ Credits
 Copyright © 2003 Blacktree, Inc (Original author of [Quicksilver](https://github.com/quicksilver/Quicksilver))  
 Copyright © 2009 Ryan McGeary (Author of [LiquidMetal](https://github.com/rmm5t/liquidmetal))  
 Copyright © 2013 Grey Lee
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/bcse/stringscore/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+

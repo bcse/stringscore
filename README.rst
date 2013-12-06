@@ -14,6 +14,10 @@ String Score
     :alt: Coverage Status
     :target: https://coveralls.io/r/bcse/stringscore
 
+.. image:: https://landscape.io/github/bcse/stringscore/master/landscape.png
+    :alt: Code Health
+    :target: https://landscape.io/github/bcse/stringscore/master
+
 .. image:: https://pypip.in/d/stringscore/badge.png
     :alt: Downloads
     :target: https://crate.io/packages/stringscore?version=latest
@@ -82,7 +86,8 @@ Credits
 
 .. _Quicksilver: https://github.com/quicksilver/Quicksilver
 
+.. image:: https://cruel-carlota.pagodabox.com/430816d5202dd8dcd04ffca1091894de
+    :target: http://githalytics.com/bcse/stringscore
 
 .. image:: https://d2weczhvl823v0.cloudfront.net/bcse/stringscore/trend.png
-    :alt: Bitdeli badge
     :target: https://bitdeli.com/free

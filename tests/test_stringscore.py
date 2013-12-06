@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+test_stringscore
+----------------------------------
+
+Tests for `stringscore` module.
+"""
+
 import unittest
 
 from stringscore import liquidmetal

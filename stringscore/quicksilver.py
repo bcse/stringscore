@@ -66,7 +66,7 @@ if __name__ == '__main__':
     from time import clock
     t0 = clock()
     test_string = 'a'
-    for string in open('/usr/share/dict/words'):
+    for string in open('tests/words'):
         abbrev = test_string
         test_string = string
         if len(abbrev) > len(string):

@@ -7,6 +7,7 @@ help:
 	@echo "test - run tests quickly with the default Python"
 	@echo "testall - run tests on every Python version with tox"
 	@echo "coverage - check code coverage quickly with the default Python"
+	@echo "coverage-html - check code coverage and generate HTML report"
 	@echo "docs - generate Sphinx HTML documentation, including API docs"
 	@echo "release - package and upload a release"
 	@echo "sdist - package"

@@ -8,5 +8,5 @@ An algorithm provides scores between 0.0 (no match) to 1.0 (perfect match) for a
 :license: MIT License.
 """
 
-__version__ = '1.0'
+__version__ = '0.1.0'
 __author__ = 'Grey Lee <bcse@bcse.tw>'

@@ -37,6 +37,9 @@ coverage:
 	coverage run -a -m stringscore.liquidmetal
 	coverage run -a -m stringscore.quicksilver
 	coverage report -m
+
+coverage-html:
+	make coverage
 	coverage html
 	open htmlcov/index.html
 

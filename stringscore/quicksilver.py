@@ -46,15 +46,17 @@ def score(string, abbrev):
                 if string[index - 1] in WHITESPACE_CHARACTERS:
                     for j in range(index - 1):
                         c = string[j]
-                        result_score -= SCORE_MATCH \
-                                        if c in WHITESPACE_CHARACTERS \
-                                        else SCORE_BUFFER
+                        result_score -= \
+                            SCORE_MATCH \
+                            if c in WHITESPACE_CHARACTERS \
+                            else SCORE_BUFFER
                 elif 'A' <= string[index] <= 'Z':
                     for j in range(index):
                         c = string[j]
-                        result_score -= SCORE_MATCH \
-                                        if 'A' <= c <= 'Z' \
-                                        else SCORE_BUFFER
+                        result_score -= \
+                            SCORE_MATCH \
+                            if 'A' <= c <= 'Z' \
+                            else SCORE_BUFFER
                 else:
                     result_score -= index
 

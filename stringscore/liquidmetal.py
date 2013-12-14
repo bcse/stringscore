@@ -23,7 +23,8 @@ def score(string, abbrev):
 
     # match & score all
     all_scores = []
-    _score_all(string, string.lower(), abbrev.lower(), -1, 0, [None] * len(string), all_scores)
+    _score_all(string, string.lower(), abbrev.lower(),
+               -1, 0, [None] * len(string), all_scores)
 
     # complete miss
     if len(all_scores) == 0:
@@ -46,7 +47,8 @@ def score(string, abbrev):
     return max_score
 
 
-def _score_all(string, search, abbrev, search_index, abbr_index, scores, all_scores):
+def _score_all(string, search, abbrev, search_index, abbr_index, scores,
+               all_scores):
     # save completed match scores at end of search
     if abbr_index == len(abbrev):
         # add trailing score for the remainder of the match
@@ -92,7 +94,8 @@ def _score_all(string, search, abbrev, search_index, abbr_index, scores, all_sco
 
         # consume matched string and continue search
         search_index = index
-        _score_all(string, search, abbrev, search_index, abbr_index, scores, all_scores)
+        _score_all(string, search, abbrev, search_index,
+                   abbr_index, scores, all_scores)
 
 
 def is_upper_case(string, index):

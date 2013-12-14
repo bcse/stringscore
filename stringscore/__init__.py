@@ -1,12 +1,6 @@
-"""
-String Score
-~~~~~~~~~~~~
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-An algorithm provides scores between 0.0 (no match) to 1.0 (perfect match) for a comparison of two strings.
-
-:copyright: (c) 2013 by Grey Lee.
-:license: MIT License.
-"""
-
+__author__ = 'Grey Lee'
+__email__ = 'bcse@bcse.tw'
 __version__ = '0.1.0'
-__author__ = 'Grey Lee <bcse@bcse.tw>'

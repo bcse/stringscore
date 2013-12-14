@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 # Ported from Quicksilver's scoreForAbbreviation algorithm
 # https://github.com/quicksilver/Quicksilver/
 

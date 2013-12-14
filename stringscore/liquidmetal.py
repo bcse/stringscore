@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 # Ported from LiquidMetal
 # https://github.com/rmm5t/liquidmetal
 

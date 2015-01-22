@@ -2,25 +2,22 @@
 String Score
 ===============================
 
-.. image:: https://badge.fury.io/py/stringscore.png
+.. image:: https://img.shields.io/pypi/v/stringscore.svg?style=flat-square
     :alt: PyPI version
-    :target: http://badge.fury.io/py/stringscore
 
-.. image:: https://travis-ci.org/bcse/stringscore.png?branch=master
+.. image:: https://img.shields.io/travis/bcse/stringscore/master.svg?style=flat-square
     :alt: Build Status
     :target: https://travis-ci.org/bcse/stringscore
 
-.. image:: https://coveralls.io/repos/bcse/stringscore/badge.png
+.. image:: https://img.shields.io/coveralls/bcse/stringscore/master.svg?style=flat-square
     :alt: Coverage Status
     :target: https://coveralls.io/r/bcse/stringscore
 
-.. image:: https://landscape.io/github/bcse/stringscore/master/landscape.png
-    :alt: Code Health
-    :target: https://landscape.io/github/bcse/stringscore/master
-
-.. image:: https://pypip.in/d/stringscore/badge.png
+.. image:: https://img.shields.io/pypi/dm/stringscore.svg?style=flat-square
     :alt: Downloads
-    :target: https://crate.io/packages/stringscore?version=latest
+
+.. image:: https://img.shields.io/pypi/l/stringscore.svg?style=flat-square
+    :alt: License
 
 
 An algorithm provides scores between 0.0 (no match) to 1.0 (perfect match) for a comparison of two strings.

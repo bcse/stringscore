@@ -1,0 +1,3 @@
+coveralls
+hypothesis
+tox

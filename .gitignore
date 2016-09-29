@@ -6,6 +6,8 @@
 .venv
 /MANIFEST
 /.coverage
+/.hypothesis
+/.tox
 /coverage.xml
 /htmlcov
 /build

@@ -16,8 +16,8 @@ from stringscore import quicksilver
 
 class LiquidMetalTestCase(unittest.TestCase):
 
-    def test_index_failure(self):
-        liquidmetal.score('İ', 'İ')
+    def test_non_ascii(self):
+        self.assertEqual(1.0, liquidmetal.score('İ', 'İ'))
 
     def test_score(self):
         n = liquidmetal.SCORE_NO_MATCH
@@ -66,6 +66,9 @@ class LiquidMetalTestCase(unittest.TestCase):
 
 
 class QuickSilverTestCase(unittest.TestCase):
+
+    def test_non_ascii(self):
+        self.assertEqual(1.0, liquidmetal.score('İ', 'İ'))
 
     def test_score(self):
         tests = [

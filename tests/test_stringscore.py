@@ -16,6 +16,9 @@ from stringscore import quicksilver
 
 class LiquidMetalTestCase(unittest.TestCase):
 
+    def test_index_failure(self):
+        liquidmetal.score('İ', 'İ')
+
     def test_score(self):
         n = liquidmetal.SCORE_NO_MATCH
         m = liquidmetal.SCORE_MATCH

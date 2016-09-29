@@ -26,3 +26,8 @@ class QuickSilverHypothesisTestCase(unittest.TestCase):
     def test_score_boundaries(self, string, abbrev):
         score = quicksilver.score(string, abbrev)
         self.assertTrue(0.0 <= score <= 1.0)
+
+
+if __name__ == '__main__':
+    unittest.main()
+

@@ -10,7 +10,7 @@ from stringscore import liquidmetal
 from stringscore import quicksilver
 
 
-class LiquidMetalTestCase(unittest.TestCase):
+class LiquidMetalHypothesisTestCase(unittest.TestCase):
 
     @given(strategies.text(), strategies.text())
     @settings(max_examples=50000)
@@ -19,7 +19,7 @@ class LiquidMetalTestCase(unittest.TestCase):
         self.assertTrue(0.0 <= score <= 1.0)
 
 
-class QuickSilverTestCase(unittest.TestCase):
+class QuickSilverHypothesisTestCase(unittest.TestCase):
 
     @given(strategies.text(), strategies.text())
     @settings(max_examples=50000)

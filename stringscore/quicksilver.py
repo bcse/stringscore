@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import re
 
 # Ported from Quicksilver's scoreForAbbreviation algorithm
 # https://github.com/quicksilver/Quicksilver/
@@ -12,7 +13,8 @@ WHITESPACE_CHARACTERS = ' \t'
 
 
 def score(string, abbrev):
-    abbrev = abbrev.lower()
+    string = remove_combining_marks(string)
+    abbrev = remove_combining_marks(abbrev.lower())
     abbrev_len = len(abbrev)
     string_len = len(string)
 
@@ -25,7 +27,7 @@ def score(string, abbrev):
     # Search for steadily smaller portions of the abbreviation
     for i in range(abbrev_len, 0, -1):
         try:
-            index = string.lower().index(abbrev[:i])
+            index = remove_combining_marks(string.lower()).index(abbrev[:i])
         except ValueError:
             continue  # Not found
 
@@ -65,6 +67,10 @@ def score(string, abbrev):
             return result_score
 
     return SCORE_NO_MATCH
+
+
+def remove_combining_marks(string):
+    return re.sub(u'[\u0300-\u036F\u1AB0-\u1AFF\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F]', u'', string)
 
 
 if __name__ == '__main__':

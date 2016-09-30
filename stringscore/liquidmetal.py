@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import re
 
 # Ported from LiquidMetal
 # https://github.com/rmm5t/liquidmetal
@@ -13,18 +14,23 @@ WORD_SEPARATORS = ' \t_-'
 
 
 def score(string, abbrev):
+    string = remove_combining_marks(string)
+    abbrev = remove_combining_marks(abbrev.lower())
+    abbrev_len = len(abbrev)
+    string_len = len(string)
+
     # short circuits
-    if len(string) < len(abbrev):
+    if string_len < abbrev_len:
         # string, abbrev = abbrev, string
         return SCORE_NO_MATCH
 
-    if len(abbrev) == 0:
+    if abbrev_len == 0:
         return SCORE_TRAILING
 
     # match & score all
     all_scores = []
-    _score_all(string, string.lower(), abbrev.lower(),
-               -1, 0, [None] * len(string), all_scores)
+    _score_all(string, remove_combining_marks(string.lower()), abbrev,
+               -1, 0, [None] * string_len, all_scores)
 
     # complete miss
     if len(all_scores) == 0:
@@ -96,6 +102,10 @@ def _score_all(string, search, abbrev, search_index, abbr_index, scores,
         search_index = index
         _score_all(string, search, abbrev, search_index,
                    abbr_index, scores, all_scores)
+
+
+def remove_combining_marks(string):
+    return re.sub(u'[\u0300-\u036F\u1AB0-\u1AFF\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F]', u'', string)
 
 
 def is_upper_case(string, index):

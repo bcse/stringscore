@@ -7,6 +7,7 @@ test_stringscore
 
 Tests for `stringscore` module.
 """
+from __future__ import unicode_literals
 
 import unittest
 

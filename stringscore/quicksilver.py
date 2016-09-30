@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
 import re
 
 # Ported from Quicksilver's scoreForAbbreviation algorithm
@@ -71,7 +70,7 @@ def score(string, abbrev):
 
 
 def remove_combining_marks(string):
-    return re.sub('[\u0300-\u036F\u1AB0-\u1AFF\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F]', '', string)
+    return re.sub(u'[\u0300-\u036F\u1AB0-\u1AFF\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F]', u'', string)
 
 
 if __name__ == '__main__':

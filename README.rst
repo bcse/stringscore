@@ -82,9 +82,3 @@ Credits
 | Copyright © 2013 Grey Lee
 
 .. _Quicksilver: https://github.com/quicksilver/Quicksilver
-
-.. image:: https://cruel-carlota.pagodabox.com/430816d5202dd8dcd04ffca1091894de
-    :target: http://githalytics.com/bcse/stringscore
-
-.. image:: https://d2weczhvl823v0.cloudfront.net/bcse/stringscore/trend.png
-    :target: https://bitdeli.com/free
